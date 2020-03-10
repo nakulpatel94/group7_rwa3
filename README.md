@@ -51,13 +51,16 @@ This package consists of a listener (ROS Subcriber) to read the order data once 
 To run the environment and the listener node, open another terminal and run the following command
 Ensure that you are inside your workspace directory
    In terminal 1:
+
      `roslaunch group7_rwa3 group7_rwa3.launch`
    
    In terminal 2 (For starting motionplanning for arms through Moveit):
+
      `source install/setup.bash`
      `roslaunch ur10_moveit_config move_group.launch arm_namespace:=/ariac/arm1`
 
    In terminal 3:
+
      `source devel/setup.bash`
      `rosrun group7_rwa3 listener`
 
